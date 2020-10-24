@@ -52,3 +52,13 @@ Or
 
     $ ./sudoku-solver -All example.sdks
 
+## Wanna have some fun ?
+
+Make a sdks file with an empty grid (everything is 0). 
+Then look for all the solutions and put them in a file.
+
+    $ ./sudoku-solver -All all.sdks > sudoku-universe.txt
+
+Sudoku has 6, 670, 903, 752, 021, 072, 936, 960 solutions. Once the execution stops (it's gonna take a lot of time) you'll have all of them in a (huge) text file.
+
+Have fun!
