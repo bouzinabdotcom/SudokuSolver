@@ -65,6 +65,27 @@ void solve(grid g) {
         }
     } 
     printg(g);
+    exit(EXIT_SUCCESS);
+}
+void solveAll(grid g) {
+    for(int j = 0; j<GRID_SIZE; j++){
+        for(int i = 0; i<GRID_SIZE; i++){
+            if(empty_cell(i, j, g)){
+                for(int n=MIN_NUM; n<=MAX_NUM; n++){
+                    if(possible(j, i, n, g)){
+                        g[j][i] = n;
+                        solveAll(g);
+                        g[j][i]=EMPTY;
+                        
+                    }
+                    
+                }
+                return;
+                
+            }
+        }
+    } 
+    printg(g);
 }
 
 void printg(grid g) {

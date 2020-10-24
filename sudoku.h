@@ -10,4 +10,5 @@ grid create_grid(int[GRID_SIZE][GRID_SIZE]);
 int empty_cell(int, int, grid);
 int possible(int, int, int, grid);
 void solve(grid);
+void solveAll(grid);
 void printg(grid);
