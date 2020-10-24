@@ -56,8 +56,10 @@ int main(int argc, char* argv[]) {
                 }
                 break;
         case 1: puts("sudoku-solver: I need at least one argument.");
-           exit(EXIT_FAILURE);
+                puts("for help: sudoku-solver -h ");
+                exit(EXIT_FAILURE);
         default: puts("sudoku-solver: too many arguments");
+                 puts("for help: sudoku-solver -h ");
                  exit(EXIT_FAILURE);
     }
     
